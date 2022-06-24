@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     <script src="https://kit.fontawesome.com/f3068f95b3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LOGIN TO IBMYP</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<script type="text/javascript" charset="utf-8">
+</script>
+<style type="text/css" media="all">
+        
+</style>
+<body>
+  <!-- Project -->
+  <form id="content" method="POST" accept-charset="utf-8" name="myform" onsubmit="myTrigger()">
+      <h3>SIGN UP</h3>
+  <hr style="width: 200px; color: cyan;" />
+  <br />
+    <span id="alto"><i class="fa fa-user" style="font-size: 13px"></i></span><input type="text" name="Username" id="Username" value="" class="name"required placeholder="Enter First Name"/><br>
+        <span id="alto"><i class="fa fa-user" style="font-size: 13px"></i></span><input type="text" name="Username" id="Username" value="" class="name"required placeholder="Enter Last Name"/><br>
+
+  <span id="alto"> <i  class="fa fa-envelope" style="font-size: 13px;"></i></span><input type="Email" name="Email" id="email" value="" required placeholder="Enter Email"/><br>
+    <span id="alto">   <i  class="fa fa-lock" style="font-size: 13px;"></i></span><input type="password" name="Passcode" class="passcode" id="password" value="" required placeholder="Enter Password"/>
+    
+    <span id="intext" class="eye" onclick="myFunction()">
+    		            <i id="hide1" class="fa fa-eye" style="color: darkcyan; font-size: 13px;"></i>
+    		            <i id="hide2" class="fa fa-eye-slash" style="color: darkcyan ; font-size: 13px;"></i></span><br>
+        <br> 
+            <br> 
+    <br> 
+
+<input class="logg" id="sender" type="submit" value="Sign Up"/>
+    <br> 
+    <br> 
+    ----  or continue with. ----
+    <br>
+        <br> 
+  <a href="google.com"> <i  class="fa-brands fa-google" style="font-size: 20px;
+ color:red ;"></i></a>
+   <a href="facebook.com"> <i class="fa-brands fa-facebook" style="font-size: 20px;
+    color: blue;"></i></a>
+    
+        <br> 
+    <br> 
+Already a member? <a href="index.html">Login now...</a>
+  </form>
+  <form id="welcomenote"action="Home.html" method="get" accept-charset="utf-8">
+   Welcome Alot <span id="name1"></span> <span id="name2"></span> As we sign you up, we really want you to know we cherish yoir membership<br />
+   -kind regards <br />
+  <i>Ian Atetwe Smith <br /> C.E.O MYP</i> 
+  </form>
+    <!-- Project -->
+  <script src="main.js"></script>
+    <script rel="script" accept-charset="UTF-8">
+            function myTrigger(){
+                    var c = document.getElementById('welcomenote');
+                    var d = document.getElementById('content');
+                    var e = document.getElementById('sender');
+                    
+                    if(e.onclick){
+                            c.style.display = 'block';
+                            d.style.display = 'none';
+                    }
+            }
+    </script>
+
+</body>
+</html>

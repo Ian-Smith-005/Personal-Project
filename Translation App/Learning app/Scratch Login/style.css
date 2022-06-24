@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bglogin.mov);
+    background-position: center;
+    height: 100%;
+}
+.fa{
+  font-size: 10px;
+}
+.form , form{
+  margin: auto; 
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  min-height: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgba(211,211,211, 0.5);
+  animation: Popup 1s ease-in 1;
+
+}
+#intext{
+  position: relative;
+} 
+#intext .fa{
+  position:absolute;
+  right:3px;
+  top: -4.65px;
+  padding:10px 10px;
+}
+input{
+  border-radius: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  width: 200px;
+  padding-left: 34px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  color: darkblue;
+  font-weight: 700;
+}
+#alto{
+  position: relative;
+}
+ #alto .fa{
+  position:absolute;
+  padding:10px 10px;
+  
+}
+input:focus{
+  outline: none;
+  border-bottom: 1.5px solid purple;
+}
+.logg{
+  width: 100px;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+  background: darkcyan;
+}
+.hide1{
+  display: none;
+}
+.reciever{
+        margin: auto; 
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500px;
+  min-height: 100px;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgba(211,211,211, 0.5);
+  color: navajowhite;
+  display: none;
+  animation: Popup 1s ease-in 1;
+}
+@keyframes Popup {
+        from{
+                opacity: 0.5;
+                transform: scale(0.5);
+        }
+        to{
+                opacity: 1;
+        }
+}
+#welcomenote{
+        display: none
+}
+#name1 , #name2{
+        color: darkcyan;
+        font-weight: bold;
+}

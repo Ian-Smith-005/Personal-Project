@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     <script src="https://kit.fontawesome.com/f3068f95b3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>RESET PASSCODE</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<script type="text/javascript" charset="utf-8">
+</script>
+<style type="text/css" media="all">
+        
+</style>
+<body>
+  <!-- Project -->
+  <div class="form"id="enter"  >
+      <h3>Reset Passcode</h3>
+  <hr style="width: 200px; color: cyan;" />
+  <br />
+  <span id="alto"> <i  class="fa fa-envelope" style="font-size: 13px;"></i></span><input type="Email" name="Email" id="email" value="" required placeholder="Enter Email"/><br>
+<br />
+<input onclick="myRelocate()" class="logg" type="submit" value="Reset "id="clicked"/>
+    <br> 
+    <br> 
+    ----  or continue with. ----
+    <br>
+        <br> 
+  <a href="google.com"> <i  class="fa-brands fa-google" style="font-size: 20px;
+ color:red ;"></i></a>
+   <a href="facebook.com"> <i class="fa-brands fa-facebook" style="font-size: 20px;
+    color: blue;"></i></a>
+    
+        <br> 
+    <br> 
+Not a member? <a href="Register.html">Register now...</a>
+  </div>
+ 
+  <br />
+  <br />
+  <div class="reciever" id="remove">
+      <i class="fa-solid fa-circle-check" style="color:darkcyan; font-size: 53pt;"></i> <br /> <br />
+      You will recieve an email to <span id="displayer"><i>No Mail Entered</i></span> with prompts on how to reset passcode, but please next time,just to be safe, use what you can remember
+  </div>
+    <!-- Project -->
+  <script src="main.js"></script>
+<script charset="UTF-8">
+ function myRelocate() {
+         var z = document.getElementById('enter');
+         var x = document.getElementById('remove');
+         var y = document.getElementById('clicked');
+         if (y.onclick){
+                 z.style.display = 'none'
+                 x.style.display = 'block'
+         }
+         else{
+                 
+         }
+                   let email = document.getElementById('email');
+ let displayer = document.getElementById('displayer');
+
+  if (email =! null){
+         displayer.innerHTML = email.innerText;
+         }
+         else{
+                 
+         }
+ }      
+ 
+</script>
+</body>
+</html>
